@@ -26,7 +26,16 @@ https://s3.amazonaws.com/tripdata/index.html
 **Tools Used:**
 **Python:** pandas, seaborn, matplotlib
 **Visualization:** Tableau, Power BI
-
+--------------------------------------------------------
+|  Category        | Tools / Skills                     |
+|------------------|------------------------------------|
+| Data Wrangling   | Python (pandas)                    |
+| Visualization    | Tableau, Power BI                  |
+| Analysis         | seaborn, matplotlib                |
+| Time-Based Trends| Grouping by hour, day, and month   |
+| User Segmentation| Members vs. casual riders          |
+| Geo Insights     | Station-level analysis & mapping   |
+---------------------------------------------------------
 **Key Findings:**
 
 **Power BI Dashboard:**
