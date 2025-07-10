@@ -1,3 +1,3 @@
 # City-Bike-Project
 
-![City Bike Rental Project](https://github.com/user-attachments/assets/a632e742-74c7-4d98-9f31-9256e5c579b1)
+![City Bike Rental Project-2](https://github.com/user-attachments/assets/781ceda3-b50a-4a4d-aec3-1b11499122c9)
