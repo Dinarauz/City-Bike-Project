@@ -59,6 +59,8 @@ Across the top 10 stations with the longest average trips, casual riders had con
 The average trip duration was 12 minutes for classic bikes and 11 minutes for electric bikes — a small difference. However, both members and casual riders preferred electric bikes overall, especially during peak commute hours. This suggests a user preference for speed and convenience, much like consumers choosing faster or more premium retail experiences.
 
 **Power BI Dashboard:** Due to my database containing 15,000,000 rows, which exceeds Tableau Public’s 10,000,000-row limit, I have shared a static image instead of an interactive dashboard.
+1. <iframe title="City Bike Project" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiODVlMmRjZDItMWM1Yy00Yjg2LTgxMzctOGQwMGI5NGFjNWRiIiwidCI6ImMwOGUyNWNkLTNjOWYtNDZlMi04MTU5LWUzNTY2ZWJlMWI5NiIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>
+**Tableau Dashboard Pictures**
 <img width="3160" height="1800" alt="Dashboard 1" src="https://github.com/user-attachments/assets/701dbe0e-4c20-49f9-a52b-5eb4d959fc28" />
 <img width="3160" height="1800" alt="Dashboard 2" src="https://github.com/user-attachments/assets/97185d02-a8b9-4476-a1ed-f9c9f5e2e6b8" />
 
