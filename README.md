@@ -1,10 +1,10 @@
-# City Bike-Share User Behavior Analysis
+# City Bike-Share User Behavior Analysis - Urban Transportation | Shared Mobility Analytics
+**Analysis Type:** Customer Behavior & Time Series Analysis
 
 ![City Bike Rental Project-2](https://github.com/user-attachments/assets/781ceda3-b50a-4a4d-aec3-1b11499122c9)
 
-**Overview:**
-I analyzed 15,329,730 bike ride records across 21 columns using Google Drive for storage and Google Colab for Python-based data cleaning and analysis.
-Due to the large dataset size, I focused on rides between December 31, 2024, and May 31, 2025 to ensure performance and depth of analysis.
+**Executive Summary:**
+This project analyzes 15.3 million bike ride records from December 2024 to May 2025 to uncover user behavior patterns across time, location, and customer segments. The analysis reveals that members account for 85% of rides with consistent weekday commute patterns, while casual riders show recreational usage concentrated on weekends. Peak usage occurs during evening rush hour (5-6 PM) with strong seasonal growth from winter to spring.
 
 This project focus on analyzing customer behavior. I looked at patterns across time, location, and user type.
 
