@@ -3,14 +3,32 @@
 
 ![City Bike Rental Project-2](https://github.com/user-attachments/assets/781ceda3-b50a-4a4d-aec3-1b11499122c9)
 
-**Executive Summary:**
+## Executive Summary:
 This project analyzes 15.3 million bike ride records from December 2024 to May 2025 to uncover user behavior patterns across time, location, and customer segments. The analysis reveals that members account for 85% of rides with consistent weekday commute patterns, while casual riders show recreational usage concentrated on weekends. Peak usage occurs during evening rush hour (5-6 PM) with strong seasonal growth from winter to spring.
 
 **Business Impact:** Provides data-driven insights for bike fleet allocation, station capacity planning, and targeted marketing strategies to convert casual riders to members.
 
-**Raw Data**
-https://s3.amazonaws.com/tripdata/index.html
+## Business Problem
+Urban bike-share programs need to optimize fleet deployment, station capacity, and marketing spend. Understanding when, where, and how different customer segments use the service is critical for:
+• **Operations:** Allocating bikes to high-demand stations during peak times
+• **Marketing:** Converting casual riders to paid memberships
+• **Infrastructure:** Identifying station expansion opportunities
+• **Revenue:** Maximizing utilization during off-peak periods
 
+## Solution & Methodology
+**Data Source**
+https://s3.amazonaws.com/tripdata/index.html (15.3M rides, Dec 2024 - May 2025)
+**Analysis Code:**
+
+**Technical Approach:**
+   • **Data Storage:** Google Drive for large dataset handling
+   • **Data Processing:** Python (pandas) in Google Colab for cleaning and analysis
+   • **Time Series Analysis:** Hourly, daily, and monthly trend identification
+   • **User Segmentation:** Members vs casual riders behavioral comparison
+   • **Geospatial Analysis:** Station-level usage patterns and mapping
+   • **Visualization:** Power BI dashboard for interactive insights
+
+Skills: Python (pandas, seaborn, matplotlib) | Time Series Analysis | Customer Segmentation | Power BI | Data Wrangling
 **Key Questions:**
 1. Which month had the most bike rides?
 2. Which day of the week is the busiest for rides?
