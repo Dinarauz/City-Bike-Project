@@ -10,10 +10,10 @@ This project analyzes 15.3 million bike ride records from December 2024 to May 2
 
 ## Business Problem
 Urban bike-share programs need to optimize fleet deployment, station capacity, and marketing spend. Understanding when, where, and how different customer segments use the service is critical for:
-• **Operations:** Allocating bikes to high-demand stations during peak times
-• **Marketing:** Converting casual riders to paid memberships
-• **Infrastructure:** Identifying station expansion opportunities
-• **Revenue:** Maximizing utilization during off-peak periods
+   • **Operations:** Allocating bikes to high-demand stations during peak times
+   • **Marketing:** Converting casual riders to paid memberships
+   • **Infrastructure:** Identifying station expansion opportunities
+   • **Revenue:** Maximizing utilization during off-peak periods
 
 ## Solution & Methodology
 **Data Source**
