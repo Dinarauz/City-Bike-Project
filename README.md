@@ -6,7 +6,7 @@
 **Executive Summary:**
 This project analyzes 15.3 million bike ride records from December 2024 to May 2025 to uncover user behavior patterns across time, location, and customer segments. The analysis reveals that members account for 85% of rides with consistent weekday commute patterns, while casual riders show recreational usage concentrated on weekends. Peak usage occurs during evening rush hour (5-6 PM) with strong seasonal growth from winter to spring.
 
-This project focus on analyzing customer behavior. I looked at patterns across time, location, and user type.
+**Business Impact:** Provides data-driven insights for bike fleet allocation, station capacity planning, and targeted marketing strategies to convert casual riders to members.
 
 **Raw Data**
 https://s3.amazonaws.com/tripdata/index.html
