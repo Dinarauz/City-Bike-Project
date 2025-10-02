@@ -28,8 +28,9 @@ https://s3.amazonaws.com/tripdata/index.html (15.3M rides, Dec 2024 - May 2025)
    • **Geospatial Analysis:** Station-level usage patterns and mapping
    • **Visualization:** Power BI dashboard for interactive insights
 
-Skills: Python (pandas, seaborn, matplotlib) | Time Series Analysis | Customer Segmentation | Power BI | Data Wrangling
-**Key Questions:**
+**Skills:** Python (pandas, seaborn, matplotlib) | Time Series Analysis | Customer Segmentation | Power BI | Data Wrangling
+
+**Key Findings:**
 1. Which month had the most bike rides?
 2. Which day of the week is the busiest for rides?
 3. What time of day do most rides happen?
