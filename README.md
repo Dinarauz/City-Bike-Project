@@ -30,17 +30,45 @@ https://s3.amazonaws.com/tripdata/index.html (15.3M rides, Dec 2024 - May 2025)
 
 **Skills:** Python (pandas, seaborn, matplotlib) | Time Series Analysis | Customer Segmentation | Power BI | Data Wrangling
 
-**Key Findings:**
-1. Which month had the most bike rides?
-2. Which day of the week is the busiest for rides?
-3. What time of day do most rides happen?
-4. Do weekdays vs. weekends show different usage patterns?
-5. How has usage changed over the year (month/seasonal trend)
-6. What percentage of rides come from members vs. casual users?
-7. Do members ride more consistently throughout the week than casual users?
-8. What are the top 10 most used start stations?
-9. Are there specific stations more popular with members vs. casual users?
-10. What is the average trip duration by bike type?
+## Key Findings:
+**1. Seasonal Growth Pattern**
+   • **May had highest volume:** 4.31M rides (+136% vs December)
+   • Steady growth from winter to spring as weather improved
+   • December showed minimal activity (182K rides) due to cold weather
+
+**2. Weekly Usage Patterns**
+   • **Busiest days:** Friday, Tuesday, Thursday
+   • Saturday outperformed Monday; Sunday had lowest volume
+   • Members show consistent weekday usage; casual riders peak Friday-Saturday
+
+**3. Daily Commute Patterns**
+   • **Peak hour:** 5 PM (evening rush), followed by 6 PM and 4 PM
+   • Morning peak at 8 AM
+   • **Weekdays:** Bimodal pattern (8 AM, 5-6 PM commute peaks)
+   • **Weekends:** Unimodal pattern (gradual build to 2-3 PM recreational peak)
+
+**4. Member vs Casual Breakdown**
+   • **Members:** 85% of rides (consistent weekday commuters)
+   • Casual: 14% of rides (weekend recreational users with high variability)
+   • Members show slight Friday/weekend dip (remote work impact)
+
+**5. Station Hotspots**
+   • **Top station:** West 21st St & 6th Ave (~60K rides)
+   • High-traffic stations concentrated in Manhattan
+   • Tourist/commuter hybrid locations show highest volumes
+
+**6. Trip Duration Insights**
+   • **Casual riders:** 15-35 minute average trips
+   • Members: 12-15 minute average trips (efficient commuting)
+   • Stations near Central Park show biggest duration gap (sightseeing effect)
+   • Average duration: 12 min (classic bikes), 11 min (electric bikes)
+
+**7. Bike Type Preference**
+   • Both segments prefer electric bikes during peak commute hours
+   • Minimal duration difference between bike types
+   • User preference driven by speed and convenience
+
+## Business Recommendations
 
 **Tools Used:**
 **Python:** pandas, seaborn, matplotlib
