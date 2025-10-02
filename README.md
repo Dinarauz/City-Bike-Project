@@ -69,6 +69,36 @@ https://s3.amazonaws.com/tripdata/index.html (15.3M rides, Dec 2024 - May 2025)
    • User preference driven by speed and convenience
 
 ## Business Recommendations
+**For Operations:**
+   • Deploy more bikes to West 21st St & 6th Ave and Manhattan hotspots during 5-6 PM
+   • Rebalance inventory from Sunday (low demand) to Friday-Saturday
+   • Prioritize electric bike availability during commute hours (8 AM, 5-6 PM)
+
+**For Marketing:**
+   • Target casual Friday-Saturday riders with membership conversion campaigns
+   • Promote winter riding with incentives to smooth seasonal demand
+   • Highlight time savings with electric bikes for commuters
+
+**For Infrastructure:**
+   • Expand capacity at top 10 stations showing consistent high volume
+   • Consider new stations along commute corridors (morning/evening peak patterns)
+   • Enhance Central Park area stations for tourist/recreational use
+
+**For Revenue Optimization:**
+   • Introduce weekend casual rider packages to capture recreational demand
+   • Offer off-peak member discounts (Sundays, midday hours)
+   • Bundle electric bike access with premium memberships
+
+## Power BI Dashboard:
+**Note:** Due to dataset size (15M+ rows exceeding Tableau Public's 10M limit), a Power BI dashboard was created.
+1. [City Bike Project.pdf](https://github.com/user-attachments/files/21237785/City.Bike.Project.pdf)
+
+**Dashboard Features:**
+   • Monthly and hourly ride trends
+   • Member vs casual usage comparison
+   • Station-level heatmaps
+   • Bike type preference analysis
+**PDF Power BI Dashboard:**
 
 **Tools Used:**
 **Python:** pandas, seaborn, matplotlib
@@ -105,10 +135,8 @@ Across the top 10 stations with the longest average trips, casual riders had con
 *Bike Preferences and Duration*
 The average trip duration was 12 minutes for classic bikes and 11 minutes for electric bikes — a small difference. However, both members and casual riders preferred electric bikes overall, especially during peak commute hours. This suggests a user preference for speed and convenience, much like consumers choosing faster or more premium retail experiences.
 
-**Power BI Dashboard:** Due to my database containing 15,000,000 rows, which exceeds Tableau Public’s 10,000,000-row limit, I have shared a static image instead of an interactive dashboard.
-1. [City Bike Project.pdf](https://github.com/user-attachments/files/21237785/City.Bike.Project.pdf)
 
-   
+
 **Tableau Dashboard Pictures**
 <img width="3160" height="1800" alt="Dashboard 1" src="https://github.com/user-attachments/assets/701dbe0e-4c20-49f9-a52b-5eb4d959fc28" />
 <img width="3160" height="1800" alt="Dashboard 2" src="https://github.com/user-attachments/assets/97185d02-a8b9-4476-a1ed-f9c9f5e2e6b8" />
