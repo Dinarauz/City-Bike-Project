@@ -1,93 +1,67 @@
-# City Bike-Share User Behavior Analysis - Urban Transportation | Shared Mobility Analytics
+# City Bike-Share User Behavior Analysis for Urban Transportation
+**Industry:** Urban Transportation | Shared Mobility Analytics
 **Analysis Type:** Customer Behavior & Time Series Analysis
 
 ![City Bike Rental Project-2](https://github.com/user-attachments/assets/781ceda3-b50a-4a4d-aec3-1b11499122c9)
 
 ## Executive Summary:
-This project analyzes 15.3 million bike ride records from December 2024 to May 2025 to uncover user behavior patterns across time, location, and customer segments. The analysis reveals that members account for 85% of rides with consistent weekday commute patterns, while casual riders show recreational usage concentrated on weekends. Peak usage occurs during evening rush hour (5-6 PM) with strong seasonal growth from winter to spring.
-
-**Business Impact:** Provides data-driven insights for bike fleet allocation, station capacity planning, and targeted marketing strategies to convert casual riders to members.
+This project analyzes 15.3 million bike rides from December 2024 to May 2025 to understand user behavior patterns. The data shows that members make up 85% of rides with predictable weekday commute patterns, while casual riders lean toward weekend recreational use. Peak usage hits at 5-6 PM during evening rush hour, with strong seasonal growth from winter to spring. These insights help operations teams deploy bikes effectively and give marketing clear targets for converting casual riders into members.
 
 ## Business Problem
-Urban bike-share programs need to optimize fleet deployment, station capacity, and marketing spend. Understanding when, where, and how different customer segments use the service is critical for:
-   • **Operations:** Allocating bikes to high-demand stations during peak times
-   • **Marketing:** Converting casual riders to paid memberships
-   • **Infrastructure:** Identifying station expansion opportunities
-   • **Revenue:** Maximizing utilization during off-peak periods
+Urban bike-share programs need to figure out where bikes should go, when they're needed most, and how to convert casual riders into regular users.
+
+**Questions I wanted to answer:**
+1. When do people actually use these bikes?
+2. Which stations are the busiest?
+3. How do members and casual riders behave differently?
+4. What seasonal patterns show up in the data?
 
 ## Solution & Methodology
+Analyzed ride patterns by hour, day, and month | Compared member vs casual rider behavior | Mapped station-level traffic | Analyzed trip duration by user type | Identified commute vs recreational usage windows
+
+**Tools Used:**
+**Python:** Pandas, Seaborn, Matplotlib
+**Storage:** Google Drive
+**Dashboards:** Tableau, Power BI
+**Techniques:** Time series analysis, customer segmentation, geospatial mapping
+
 **Data Source**
 https://s3.amazonaws.com/tripdata/index.html (15.3M rides, Dec 2024 - May 2025)
+
 **Analysis Code:**
 
-**Technical Approach:**
-   • **Data Storage:** Google Drive for large dataset handling
-   • **Data Processing:** Python (pandas) in Google Colab for cleaning and analysis
-   • **Time Series Analysis:** Hourly, daily, and monthly trend identification
-   • **User Segmentation:** Members vs casual riders behavioral comparison
-   • **Geospatial Analysis:** Station-level usage patterns and mapping
-   • **Visualization:** Power BI dashboard for interactive insights
-
-**Skills:** Python (pandas, seaborn, matplotlib) | Time Series Analysis | Customer Segmentation | Power BI | Data Wrangling
 
 ## Key Findings:
-**1. Seasonal Growth Pattern**
-   • **May had highest volume:** 4.31M rides (+136% vs December)
-   • Steady growth from winter to spring as weather improved
-   • December showed minimal activity (182K rides) due to cold weather
+**Seasonal & Weekly Patterns**
+May hit 4.31M rides while December only saw 182K - the winter-to-spring climb shows clear weather impact. Friday, Tuesday, and Thursday were busiest, with Saturday beating Monday but Sunday showing lowest volume. Members ride consistently all week; casual riders spike Friday-Saturday, creating a clear conversion opportunity.
 
-**2. Weekly Usage Patterns**
-   • **Busiest days:** Friday, Tuesday, Thursday
-   • Saturday outperformed Monday; Sunday had lowest volume
-   • Members show consistent weekday usage; casual riders peak Friday-Saturday
+**Rush Hour & Daily Patterns**
+5 PM leads (evening rush), followed by 6 PM and 4 PM. Morning peak hits at 8 AM. Weekdays show bimodal patterns (morning/evening), while weekends peak at 2-3 PM for recreational use. This tells operations to stock commuter stations before 8 AM and 5 PM, then shift bikes to recreational spots on weekends.
 
-**3. Daily Commute Patterns**
-   • **Peak hour:** 5 PM (evening rush), followed by 6 PM and 4 PM
-   • Morning peak at 8 AM
-   • **Weekdays:** Bimodal pattern (8 AM, 5-6 PM commute peaks)
-   • **Weekends:** Unimodal pattern (gradual build to 2-3 PM recreational peak)
+**Member vs Casual Behavior**
+Members: 85% of rides (efficient 12-15 min commutes) | Casual: 14% of rides (longer 15-35 min trips, weekend-focused). Casual riders at Central Park stations average much longer trips - likely sightseeing. Both groups prefer electric bikes during commute hours.
 
-**4. Member vs Casual Breakdown**
-   • **Members:** 85% of rides (consistent weekday commuters)
-   • Casual: 14% of rides (weekend recreational users with high variability)
-   • Members show slight Friday/weekend dip (remote work impact)
-
-**5. Station Hotspots**
-   • **Top station:** West 21st St & 6th Ave (~60K rides)
-   • High-traffic stations concentrated in Manhattan
-   • Tourist/commuter hybrid locations show highest volumes
-
-**6. Trip Duration Insights**
-   • **Casual riders:** 15-35 minute average trips
-   • Members: 12-15 minute average trips (efficient commuting)
-   • Stations near Central Park show biggest duration gap (sightseeing effect)
-   • Average duration: 12 min (classic bikes), 11 min (electric bikes)
-
-**7. Bike Type Preference**
-   • Both segments prefer electric bikes during peak commute hours
-   • Minimal duration difference between bike types
-   • User preference driven by speed and convenience
+**Station Hotspots**
+West 21st St & 6th Ave leads with ~60K rides. High-traffic stations cluster in Manhattan, serving both commuters and tourists. These locations need priority deployment during peak hours to avoid stockouts.
 
 ## Business Recommendations
-**For Operations:**
-   • Deploy more bikes to West 21st St & 6th Ave and Manhattan hotspots during 5-6 PM
-   • Rebalance inventory from Sunday (low demand) to Friday-Saturday
-   • Prioritize electric bike availability during commute hours (8 AM, 5-6 PM)
+**Operations:** Deploy more bikes to West 21st St & 6th Ave during 5-6 PM | Rebalance from Sunday to Friday-Saturday | Stock electric bikes during commute hours (8 AM, 5-6 PM)
 
-**For Marketing:**
-   • Target casual Friday-Saturday riders with membership conversion campaigns
-   • Promote winter riding with incentives to smooth seasonal demand
-   • Highlight time savings with electric bikes for commuters
+**Marketing:** Target casual Friday-Saturday riders with membership campaigns | Run winter promotions to smooth seasonal dips | Highlight electric bike time savings
+Infrastructure: Expand top 10 high-volume stations | Add stations along commute corridors | Upgrade Central Park area for recreational traffic
 
-**For Infrastructure:**
-   • Expand capacity at top 10 stations showing consistent high volume
-   • Consider new stations along commute corridors (morning/evening peak patterns)
-   • Enhance Central Park area stations for tourist/recreational use
+**Revenue:** Launch weekend packages for casual riders | Offer off-peak discounts (Sundays, midday) | Bundle electric bikes into premium memberships
 
-**For Revenue Optimization:**
-   • Introduce weekend casual rider packages to capture recreational demand
-   • Offer off-peak member discounts (Sundays, midday hours)
-   • Bundle electric bike access with premium memberships
+## Expected Impact
+My Python analysis identified the 5 PM peak and West 21st St & 6th Ave hotspot (~60K rides), directly informing where to deploy bikes. The 85% vs 14% split and different weekly patterns show marketing exactly who to target. The trip duration gap (members 12-15 min vs casual 15-35 min) backs up efficiency messaging. The seasonal swing (4.31M May vs 182K December) quantifies weather impact for fleet planning.
+
+Dashboards let teams monitor real-time demand and adjust deployment hour by hour.
+
+## Next Steps
+**Future Enhancements:** Weather integration for demand forecasting | Customer lifetime value analysis for conversion ROI | A/B testing for membership messaging | Real-time alerts when stations run low
+
+**Current Limitations:** Only 6 months of data (full year would show all seasons) | No weather data | Missing user demographics | No cost data for ROI calculations
+
 
 ## Power BI Dashboard:
 **Note:** Due to dataset size (15M+ rows exceeding Tableau Public's 10M limit), a Power BI dashboard was created.
@@ -100,9 +74,6 @@ https://s3.amazonaws.com/tripdata/index.html (15.3M rides, Dec 2024 - May 2025)
    • Bike type preference analysis
 **PDF Power BI Dashboard:**
 
-**Tools Used:**
-**Python:** pandas, seaborn, matplotlib
-**Visualization:** Tableau, Power BI
 --------------------------------------------------------
 |  Category        | Tools / Skills                     |
 |------------------|------------------------------------|
@@ -113,29 +84,6 @@ https://s3.amazonaws.com/tripdata/index.html (15.3M rides, Dec 2024 - May 2025)
 | User Segmentation| Members vs. casual riders          |
 | Geo Insights     | Station-level analysis & mapping   |
 ---------------------------------------------------------
-**Key Findings:**
-*Monthly Ride Trends*
-May had the highest number of rides with 4.31 million, followed by April and March with 3.71 million and 3.15 million respectively. The lowest number of rides occurred in December, with only 182 rides, which makes sense given the cold winter weather. Warmer spring months like May likely encouraged more outdoor activity and bike usage.
-*Which Days Are Busiest?*
-Fridays had the highest overall ride volume, followed by Tuesdays and Thursdays. Interestingly, Saturday saw more rides than Monday, but Sunday had the lowest ride volume overall. This pattern reflects a mix of weekday commuting and weekend leisure usage.
-*What Time of Day Do Most Rides Happen?*
-As expected, the most popular time to ride is during evening commute hours, with 5 PM being the peak, followed closely by 6 PM and 4 PM. Morning usage peaks at 8 AM, showing a typical office commute pattern. This reinforces the idea that many riders are using City Bike services as part of their daily work routine — just like many retail shoppers follow predictable time-based traffic patterns.
-*Weekday vs. Weekend Usage Patterns*
-Weekdays saw significantly more ride activity than weekends. A closer look at hourly usage reveals a bimodal pattern on weekdays, with peaks at 8 AM and again around 5–6 PM. This pattern aligns with standard commute times.
-
-In contrast, weekends show a unimodal distribution — rides gradually increase starting at 6 AM, peaking around 2–3 PM, and tapering off afterward. This suggests casual, recreational use that’s spread more evenly across the day.
-*Seasonal Trends Over Time*
-From December 2024 to May 2025, ride volume steadily increased. While January had a slight bump over December, usage dropped a bit in February before climbing again in March through May. This trend likely reflects improving weather conditions as spring approached. Casual users followed a similar pattern, but with lower overall usage.
-*Member vs. Casual Breakdown*
-Members made up 85% of total rides, while casual users accounted for 14% — a notable share. Casual usage showed more variability throughout the week, peaking around Friday and Saturday, then dropping off on Sunday. Members showed a more steady weekday pattern, with a slight dip on Fridays and weekends, possibly indicating remote work during Fridays.
-*Top Start Stations*
-The most-used station was West 21st St & 6th Ave, with just under 60,000 rides starting there. Other high-traffic stations included key Manhattan. These stations likely serve both commuters and tourists, making them valuable hotspots for resource allocation — just like high-performing retail locations.
-*Trip Duration by Station and User Type*
-Across the top 10 stations with the longest average trips, casual riders had consistently longer durations, ranging from 15 to over 35 minutes. Members averaged 12 to 15 minutes, even at the same stations. Stations near Central Park and Grand Army Plaza had the biggest gaps — likely due to casual riders using them for sightseeing. This mirrors retail behavior where loyal customers shop quickly and efficiently, while casual visitors browse longer.
-*Bike Preferences and Duration*
-The average trip duration was 12 minutes for classic bikes and 11 minutes for electric bikes — a small difference. However, both members and casual riders preferred electric bikes overall, especially during peak commute hours. This suggests a user preference for speed and convenience, much like consumers choosing faster or more premium retail experiences.
-
-
 
 **Tableau Dashboard Pictures**
 <img width="3160" height="1800" alt="Dashboard 1" src="https://github.com/user-attachments/assets/701dbe0e-4c20-49f9-a52b-5eb4d959fc28" />
